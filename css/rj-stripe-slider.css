@@ -1,0 +1,204 @@
+.rjss {
+	width: 100%;
+	padding: 50px 0;
+	overflow: hidden;
+}
+
+.rjss-container {
+	float: left;
+	overflow: hidden;
+}
+
+.rjss-navigation {
+	width: 20px;
+	height: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-image: url(../img/rjss-sprite.png);
+	background-size: 300%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	float: left;
+}
+
+.rjss-hidden {
+	background-image: none;
+	cursor: default;
+}
+
+.rjss-center {
+	margin-left: auto !important;
+	margin-right: auto;
+}
+
+.rjss-left.rjss-black {
+	background-position: -20px -20px;
+}
+
+.rjss-right.rjss-black {
+	background-position: -20px 0;
+}
+
+.rjss-left.rjss-white {
+	background-position: 0 -20px;
+}
+
+.rjss-right.rjss-white {
+	background-position: 0 0;
+}
+
+.rjss-left.rjss-green {
+	background-position: -40px -20px;
+}
+
+.rjss-right.rjss-green {
+	background-position: -40px 0;
+}
+
+.rjss-bar {
+	overflow: auto;
+	-webkit-transition: margin-left .3s linear;
+	-o-transition: margin-left .3s linear;
+	transition: margin-left .3s linear;
+	position: relative;
+}
+
+@-webkit-keyframes wobble-right {
+	0% {left: -10px;}
+	50% {left: 10px;}
+	100% {left: 0;}
+}
+
+@keyframes wobble-right {
+	0% {left: -10px;}
+	50% {left: 10px;}
+	100% {left: 0;}
+}
+
+@-webkit-keyframes wobble-left {
+	0% {left: 10px;}
+	50% {left: -10px;}
+	100% {left: 0;}
+}
+
+@keyframes wobble-left {
+	0% {left: 10px;}
+	50% {left: -10px;}
+	100% {left: 0;}
+}
+
+.rjss-wobble.rjss-animated-right {
+	-webkit-animation: wobble-right .3s linear .3s;
+	        animation: wobble-right .3s linear .3s;
+}
+
+.rjss-wobble.rjss-animated-left {
+	-webkit-animation: wobble-left .3s linear .3s;
+	        animation: wobble-left .3s linear .3s;
+}
+
+@-webkit-keyframes dash-right {
+	0% {left: 0;}
+	70% {left: 120px;}
+	100% {left: 0;}
+}
+
+@keyframes dash-right {
+	0% {left: 0;}
+	70% {left: 120px;}
+	100% {left: 0;}
+}
+
+@-webkit-keyframes dash-left {
+	0% {left: 0;}
+	70% {left: -120px;}
+	100% {left: 0;}
+}
+
+@keyframes dash-left {
+	0% {left: 0;}
+	70% {left: -120px;}
+	100% {left: 0;}
+}
+
+.rjss-dash.rjss-animated-right {
+	-webkit-animation: dash-right .3s ease-out;
+	        animation: dash-right .3s ease-out;
+}
+
+.rjss-dash.rjss-animated-left {
+	-webkit-animation: dash-left .3s ease-out;
+	        animation: dash-left .3s ease-out;
+}
+
+@-webkit-keyframes skew-right {
+	0% {-webkit-transform: skewX(-10deg);transform: skewX(-10deg);}
+	70% {-webkit-transform: skewX(-20deg);transform: skewX(-20deg);}
+	100% {-webkit-transform: skewX(0);transform: skewX(0);}
+}
+
+@keyframes skew-right {
+	0% {-webkit-transform: skewX(-10deg);transform: skewX(-10deg);}
+	70% {-webkit-transform: skewX(-20deg);transform: skewX(-20deg);}
+	100% {-webkit-transform: skewX(0);transform: skewX(0);}
+}
+
+@-webkit-keyframes skew-left {
+	0% {-webkit-transform: skewX(10deg);transform: skewX(10deg);}
+	70% {-webkit-transform: skewX(20deg);transform: skewX(20deg);}
+	100% {-webkit-transform: skewX(0);transform: skewX(0);}
+}
+
+@keyframes skew-left {
+	0% {-webkit-transform: skewX(10deg);transform: skewX(10deg);}
+	70% {-webkit-transform: skewX(20deg);transform: skewX(20deg);}
+	100% {-webkit-transform: skewX(0);transform: skewX(0);}
+}
+
+.rjss-skew.rjss-animated-right {
+	-webkit-animation: skew-right .3s linear;
+	        animation: skew-right .3s linear;
+}
+
+.rjss-skew.rjss-animated-left {
+	-webkit-animation: skew-left .3s linear;
+	        animation: skew-left .3s linear;
+}
+
+.rjss-slide {
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	opacity: .4;
+	margin: 0 10px;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.rjss-slide:hover {
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.rjss-slide img {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.rjss-blocked {
+	opacity: .4;
+}
+
+.rjss-vertical {
+	height: 100%;
+}
+
+.rjss-horizontal {
+	width: 100%;
+}

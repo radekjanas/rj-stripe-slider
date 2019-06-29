@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <title>Stripe Slider</title>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/rj-stripe-slider.css">
+    </head>
+    <body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div id="rjss" class="rjss">
+						<div class="rjss-navigation rjss-left rjss-blocked"></div>
+						<div class="rjss-container">
+							<div class="rjss-bar">
+								<a class="rjss-slide" href="#"><img class="rjss-img" src="img/logo-1.png" alt="Logo 1"></a>
+								<a class="rjss-slide" href="#"><img class="rjss-img" src="img/logo-2.png" alt="Logo 2"></a>
+								<a class="rjss-slide" href="#"><img class="rjss-img" src="img/logo-3.png" alt="Logo 3"></a>
+								<a class="rjss-slide" href="#"><img class="rjss-img" src="img/logo-4.png" alt="Logo 4"></a>
+								<a class="rjss-slide" href="#"><img class="rjss-img" src="img/logo-5.png" alt="Logo 5"></a>
+								<a class="rjss-slide" href="#"><img class="rjss-img" src="img/logo-6.png" alt="Logo 6"></a>
+								<a class="rjss-slide" href="#"><img class="rjss-img" src="img/logo-7.png" alt="Logo 7"></a>
+								<a class="rjss-slide" href="#"><img class="rjss-img" src="img/logo-8.png" alt="Logo 8"></a>
+							</div>
+						</div>
+						<div class="rjss-navigation rjss-right"></div>
+					</div>
+                    <div id="rjss1" class="rjss">
+						<div class="rjss-navigation rjss-left rjss-blocked"></div>
+						<div class="rjss-container">
+							<div class="rjss-bar">
+								<a class="rjss-slide" href="#"><img class="rjss-img" src="img/logo-1.png" alt="Logo 1"></a>
+								<a class="rjss-slide" href="#"><img class="rjss-img" src="img/logo-2.png" alt="Logo 2"></a>
+								<a class="rjss-slide" href="#"><img class="rjss-img" src="img/logo-3.png" alt="Logo 3"></a>
+								<a class="rjss-slide" href="#"><img class="rjss-img" src="img/logo-4.png" alt="Logo 4"></a>
+							</div>
+						</div>
+						<div class="rjss-navigation rjss-right"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/rj-stripe-slider.js"></script>
+        <script>
+            const slider1 = new StripeSlider('rjss');
+            const slider2 = new StripeSlider('rjss1');
+        </script>
+    </body>
+</html>
