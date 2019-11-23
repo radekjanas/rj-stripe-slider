@@ -3,6 +3,9 @@
 rj-stripe-slider displays configurable slider widget. It is designed for displaying logos in "Company Partners" section but of course it can be used for other purposes.
 This plugin has been created for one of my commercial projects.
 
+## Screenshot
+![rj-stripe-slider](./screenshot.png)
+
 ## Why stripe slider is clever?
 
 Lets say you have 12 images (and each has 200px of width) in slider and the container with slider is full width:
